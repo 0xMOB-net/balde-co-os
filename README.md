@@ -1,29 +1,15 @@
-# Balde & Co OS — PWA
+# Balde & Co OS V4 — PWA
 
-Application statique installable depuis Chrome/Edge sur Android et ordinateur, et via Partager > Sur l’écran d’accueil sur iPhone (Safari).
+Application installable via GitHub Pages, sans Play Store.
 
-## Publier avec GitHub Pages
+## Fonctionnalités
+- Dossiers clients, parcours, notes internes par dossier, tâches, suivi documentaire et paiements.
+- Impression de la fiche d’un dossier.
+- Export et restauration de sauvegardes JSON dans Paramètres.
+- PWA installable et mode hors ligne après premier chargement.
 
-1. Créez un dépôt GitHub **balde-co-os**.
-2. Dans ce dossier :
+## Mise à jour d’un dépôt existant
+Copier tous les fichiers à la racine du dépôt puis `git add . && git commit -m "Balde & Co OS V4" && git push`.
 
-```bash
-git init
-git add .
-git commit -m "Balde & Co OS PWA"
-git branch -M main
-git remote add origin https://github.com/VOTRE_IDENTIFIANT/balde-co-os.git
-git push -u origin main
-```
-
-3. GitHub > dépôt > Settings > Pages > Build and deployment : **Deploy from a branch**, branche **main**, dossier **/(root)**, Save.
-4. Ouvrez `https://VOTRE_IDENTIFIANT.github.io/balde-co-os/` dans Chrome/Edge, puis **Installer** (ou menu > Installer l'application).
-
-## Limitations importantes
-
-- Les dossiers, paiements et conversations sont stockés **uniquement dans localStorage sur l'appareil et le navigateur utilisés**. Aucun compte, aucune synchronisation multi-appareils, aucune sauvegarde serveur.
-- GitHub Pages héberge un site public. **Ne saisissez pas de données réelles sensibles, passeports, informations financières ou dossiers confidentiels** dans cette version de démonstration.
-- Le module conversations contient des **notes internes locales**, pas une messagerie client en temps réel.
-- Les analyses de l'assistant sont des règles locales, pas une IA connectée.
-- Utilisez Exporter JSON régulièrement, et conservez les exports en lieu sûr.
-- Pour une exploitation réelle, il faut authentification, base de données, contrôles d'accès, sauvegardes, journal d'audit et hébergement approprié.
+## Sécurité
+Stockage local au navigateur (clé conservée `baldecoos_v2` pour préserver les données des versions précédentes). Pas de base de données distante, de connexion utilisateur, de messagerie multi-utilisateurs ou d’IA connectée. Ne pas enregistrer de données sensibles. Les fichiers de sauvegarde JSON ne sont pas chiffrés.
