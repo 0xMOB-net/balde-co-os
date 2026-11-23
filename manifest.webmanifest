@@ -2,7 +2,7 @@
   "id": "./",
   "name": "Balde & Co OS — Gestion intelligente",
   "short_name": "Balde & Co",
-  "description": "Dossiers clients, conversations internes, tâches et finances",
+  "description": "Gestion des dossiers, conversations, documents et suivi des prestations",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
